@@ -2,22 +2,36 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea (
           child: Column(
             children: [
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 50.0,
                 backgroundImage: AssetImage('images/me.jpeg'),
               ),
-              Text('Alfredo Luz',
+              const Text('Alfredo Luz',
                 style: TextStyle(
                   fontSize: 40.00,
+                  fontFamily: 'Pacifico',
+                  color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              const Text('DEVELOPER',
+                style: TextStyle(
+                  fontFamily: 'Source Sans 3',
+                  fontSize: 30.00,
+                  color: Colors.white
+                ),
+              ),
+              Container(
+                width: 80.00,
+                height: 1.00,
+                color: Colors.white,
+              )
             ],
           ),
         )
