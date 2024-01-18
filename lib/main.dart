@@ -28,10 +28,49 @@ void main() {
                 ),
               ),
               Container(
-                width: 80.00,
-                height: 1.00,
                 color: Colors.white,
-              )
+                padding: const EdgeInsets.all(10.0),
+                margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: const Row(
+                  children: [
+                    Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text('alfredo.alfpaes@gmail.com',
+                    style: TextStyle(
+                      color: Colors.teal,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Source Sans 3'
+                    ),)
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                padding: const EdgeInsets.all(10.0),
+                margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: const Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text('+55 123 456 789',
+                      style: TextStyle(
+                          color: Colors.teal,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'Source Sans 3'
+                      ),)
+                  ],
+                ),
+              ),
             ],
           ),
         )
