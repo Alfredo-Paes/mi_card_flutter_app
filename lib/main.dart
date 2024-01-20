@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      home: Scaffold(
+  runApp(const MaterialApp(
+    home: Scaffold(
         backgroundColor: Colors.teal,
-        body: SafeArea (
+        body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const CircleAvatar(
+              CircleAvatar(
                 radius: 50.0,
                 backgroundImage: AssetImage('images/me.jpeg'),
               ),
-              const Text('Alfredo Luz',
+              Text(
+                'Alfredo Luz',
                 style: TextStyle(
                   fontSize: 40.00,
                   fontFamily: 'Pacifico',
@@ -20,63 +21,58 @@ void main() {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const Text('DEVELOPER',
+              Text(
+                'DEVELOPER',
                 style: TextStyle(
-                  fontFamily: 'Source Sans 3',
-                  fontSize: 30.00,
-                  color: Colors.white
+                    fontFamily: 'Source Sans 3',
+                    fontSize: 30.00,
+                    color: Colors.white),
+              ),
+              SizedBox(height: 20.0,
+                child: Divider(
+                  indent: 125,
+                  endIndent: 125,
+                  color: Colors.white70,
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: const EdgeInsets.all(10.0),
-                margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: const Row(
-                  children: [
-                    Icon(
-                      Icons.email,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text('alfredo.alfpaes@gmail.com',
+                margin: EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'alfredo.alfpaes@gmail.com',
                     style: TextStyle(
-                      color: Colors.teal,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'Source Sans 3'
-                    ),)
-                  ],
+                        color: Colors.teal,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Source Sans 3'),
+                  ),
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: const EdgeInsets.all(10.0),
-                margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: const Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text('+55 123 456 789',
-                      style: TextStyle(
-                          color: Colors.teal,
-                          fontWeight: FontWeight.bold,
-                          fontFamily: 'Source Sans 3'
-                      ),)
-                  ],
+                margin: EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+55 123 456 789',
+                    style: TextStyle(
+                        color: Colors.teal,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Source Sans 3'),
+                  ),
                 ),
               ),
             ],
           ),
-        )
-      ),
-    )
-  );
+        )),
+  ));
 }
-
-
