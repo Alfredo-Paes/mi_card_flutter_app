@@ -3,17 +3,17 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MaterialApp(
     home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.blueGrey,
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 radius: 50.0,
-                backgroundImage: AssetImage('images/me.jpeg'),
+                backgroundImage: AssetImage('images/harvey.jpg'),
               ),
               Text(
-                'Alfredo Luz',
+                'Harvey Specter',
                 style: TextStyle(
                   fontSize: 40.00,
                   fontFamily: 'Pacifico',
@@ -22,7 +22,7 @@ void main() {
                 ),
               ),
               Text(
-                'DEVELOPER',
+                'LAWYER',
                 style: TextStyle(
                     fontFamily: 'Source Sans 3',
                     fontSize: 30.00,
@@ -42,12 +42,12 @@ void main() {
                 child: ListTile(
                   leading: Icon(
                     Icons.email,
-                    color: Colors.teal,
+                    color: Colors.blueGrey,
                   ),
                   title: Text(
-                    'alfredo.alfpaes@gmail.com',
+                    'harvey.specter@pearsonspecter.com',
                     style: TextStyle(
-                        color: Colors.teal,
+                        color: Colors.blueGrey,
                         fontWeight: FontWeight.bold,
                         fontFamily: 'Source Sans 3'),
                   ),
@@ -60,12 +60,12 @@ void main() {
                 child: ListTile(
                   leading: Icon(
                     Icons.phone,
-                    color: Colors.teal,
+                    color: Colors.blueGrey,
                   ),
                   title: Text(
                     '+55 123 456 789',
                     style: TextStyle(
-                        color: Colors.teal,
+                        color: Colors.blueGrey,
                         fontWeight: FontWeight.bold,
                         fontFamily: 'Source Sans 3'),
                   ),

@@ -1,16 +1,13 @@
-# mi_card_flutter_app
+# Mi Card Flutter App
 
-A professional card for presentation made with Flutter
+## Description:
+This application was developed to demonstrate a few widgets the framework Flutter.
 
-## Getting Started
+## Technologies used:
+- Flutter: https://docs.flutter.dev
 
-This project is a starting point for a Flutter application.
+## Images:
+<img src="image/project_example.png" height="310" width="180">
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Autor:
+- Alfredo Paes da Luz.
