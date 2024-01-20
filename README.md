@@ -7,7 +7,7 @@ This application was developed to demonstrate a few widgets the framework Flutte
 - Flutter: https://docs.flutter.dev
 
 ## Images:
-<img src="image/project_example.png" height="310" width="180">
+<img src="images/project_example.png" height="310" width="180">
 
 ### Autor:
 - Alfredo Paes da Luz.
